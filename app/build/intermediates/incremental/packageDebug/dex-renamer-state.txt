@@ -1,0 +1,7 @@
+#Thu Feb 09 15:50:08 EST 2017
+base.0=/home/keith/CPSC475_examples/5_Fragment_Static/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_f84f3dfdddb397580e0e3ae9233e08a242ab2525
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/home/keith/CPSC475_examples/5_Fragment_Static/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_1559ddf4592700e00b6ebb286e18f641132166b4/classes.dex
+base.1=/home/keith/CPSC475_examples/5_Fragment_Static/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_1559ddf4592700e00b6ebb286e18f641132166b4
+file.0=/home/keith/CPSC475_examples/5_Fragment_Static/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_f84f3dfdddb397580e0e3ae9233e08a242ab2525/classes.dex
