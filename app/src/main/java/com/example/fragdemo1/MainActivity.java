@@ -1,13 +1,16 @@
 package com.example.fragdemo1;
 
-
-import android.app.Activity;
+//import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.View;
+
 import android.widget.TextView;
 
-public class MainActivity extends Activity {
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.appcompat.app.AppCompatActivity;
+
+public class MainActivity extends AppCompatActivity {
 
     Fragment1 myFrag;
 
@@ -16,9 +19,8 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //get ref to fragment
-        myFrag = (Fragment1) getFragmentManager().findFragmentById(R.id.fragment1);
-
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        myFrag = (Fragment1) fragmentManager.findFragmentById(R.id.f1);
     }
 
     @Override
@@ -26,9 +28,12 @@ public class MainActivity extends Activity {
         super.onStart();
 
         //getView() get the root view for fragments layout
-        View frag1View = myFrag.getView();
-        TextView myTextView = (TextView) frag1View.findViewById(R.id.textView1);
-        myTextView.setText("A modified string");
+        TextView frag_tv = (TextView)myFrag.getView().findViewById(R.id.textView1);
+
+        //change the text
+        if (frag_tv != null)
+            frag_tv.setText("Some text changes");
+
     }
 
     @Override
