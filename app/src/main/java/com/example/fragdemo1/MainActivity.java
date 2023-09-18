@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         super.onStart();
 
         //getView() get the root view for fragments layout
-        TextView frag_tv = (TextView)myFrag.getView().findViewById(R.id.textView1);
+        TextView frag_tv = myFrag.getView().findViewById(R.id.textView1);
 
         //change the text
         if (frag_tv != null)
